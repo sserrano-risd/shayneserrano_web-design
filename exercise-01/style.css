@@ -1,0 +1,37 @@
+body{
+    text-align: justify;
+    padding-left: 500px;
+    padding-right: 500px;
+    background-color: rgb(255, 255, 255);
+}
+.mreaves{
+    font-family: mr-eaves-xl-modern, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+h1{
+    color: rgb(96, 146, 221);
+    text-align: center;
+    font-family: pinot-grigio-modern, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.contrasts{
+    font-size: 15px;
+    color: gray;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+h5{
+    font-family: pinot-grigio-modern, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: gray;
+    text-align: center;
+}
+h2{
+    font-family: pinot-grigio-modern, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
