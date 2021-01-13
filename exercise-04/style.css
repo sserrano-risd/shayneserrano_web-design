@@ -25,6 +25,7 @@ body{
     background-color: black;
     height: 50px;
     width: 100%;
+    z-index: 1;
 }
 .cover-article{
     display: flex;
@@ -32,7 +33,9 @@ body{
 }
 .cover-image, .cover-text{
     width: 50%;
-    height: 500px
+    height: 500px;
+    overflow: hidden;
+
 }
 .cover-image img{
     width: 100%;
@@ -59,14 +62,16 @@ h6{
     color: gray;
 }
 .articles{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
+    margin:0 auto;
 }
 .article01, .article02{
-    width: 50%;
+    flex: 1;
+    padding: 3%;
 }
-.img01, .img02{
+.img01 img, .img02 img{
     width: 100%;
 }
 .text01 > *, .text02 > *{
