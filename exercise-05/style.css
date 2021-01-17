@@ -6,8 +6,6 @@
 }
 body{
     background-image: url(img/ShayneSerrano_Alt01_B.jpg);
-    width: 100vw;
-    height: 100%;
 }
 p{
     font-family: pinot-grigio-modern, sans-serif;
@@ -19,7 +17,7 @@ p{
 span{
     color: red;
 }
-.move:hover{
+div:hover{
     animation: footer 5s linear 0s infinite;
 }
 .move{
