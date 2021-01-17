@@ -10,7 +10,6 @@ body{
     height: 100%;
 }
 p{
-    z-index: 1;
     font-family: pinot-grigio-modern, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -20,12 +19,10 @@ p{
 span{
     color: red;
 }
-div:hover{
+.move:hover{
     animation: footer 5s linear 0s infinite;
 }
 .move{
-    height: 50px;
-    width: 100%;
     color: red;
     font-family: pinot-grigio-modern, sans-serif;
     font-weight: 700;
