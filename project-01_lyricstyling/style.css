@@ -3,59 +3,109 @@
     margin: 0;
     padding: 0;
 }
-body{
+html body{ 
+    background: url(img/oce.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     width: 100vw;
     height: 100%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
     overflow: hidden;
-}
+    /* position: fixed;
+    top: 0;
+    bottom: 0; */
+    
+  }
 h1{
-    font-family: chelsea-market-open, sans-serif;
+    font-family: flegrei, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(90, 150, 255);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 h4{
-    font-family: dita, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color:rgb(90, 150, 255);
-    text-align: center;
-}
-p{
-    font-family: dita, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-span{
-    color: rgb(110, 110, 110);
-    font-family: dita, sans-serif;
+    font-family: serenity, sans-serif;
     font-weight: 500;
     font-style: italic;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+}
+p{
+    /* display: flex;
+    justify-content: center; */
+    font-family: serenity, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    /* background-color: rgba(255, 255, 255, 0.25); */
+}
+span{
+    font-family: serenity, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(150, 150, 150);
 }
 .titlebar{
     height: 50px;
     position: fixed;
     width: 100%;
 }
+.titlebar:hover{
+    animation: zoom 5s infinite ease-in-out both alternate;
+}
 .kaleidoscope{
+    width: 33.33%;
+    min-height: 100vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+.kaleidoscope div{
     display:flex;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    align-items: center;
 }
 div{
     position: fixed;
-    border: 10vw double rgba(48, 86, 255, 0.25);
-    outline: 10vw double rgba(83, 153, 158, 0.25);
+    border: 6vw double rgba(180, 240, 255, 0.25);
+    outline: 6vw double rgba(0, 84, 133, 0.25);
     transform:rotate(.1turn);
     margin: 3em;
-    animation: kaleid 45s -4s infinite ease-in-out both alternate;
+    animation: kaleid 60s -4s infinite ease-in-out both alternate;
 }
-
+.lyric01{
+    display: flex;
+    /* flex-wrap: wrap; */
+    min-height: 100vh;
+    width: 33.33%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: lyric01 45s linear infinite;
+}
+/* .lyric01 :first-child{
+    animation: lyric01 45s linear infinite;
+} */
+.jhene{
+    display: flex;
+    /* flex-wrap: wrap; */
+    min-height: 100vh;
+    width: 33.33%;
+    justify-content: center;
+    align-items: center;
+}
+.jhene img{
+    transform: scale(.5);
+}
 @keyframes kaleid {
     0%{
         transform: rotate(.1turn);
@@ -67,3 +117,23 @@ div{
         transform: rotate(.1turn);
     }
 }
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2) translatey(50px);
+    }
+}
+@keyframes lyric01{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-120%)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .article
+    }
