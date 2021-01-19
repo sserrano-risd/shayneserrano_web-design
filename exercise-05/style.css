@@ -6,6 +6,9 @@
 }
 body{
     background-image: url(img/ShayneSerrano_Alt01_B.jpg);
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
 }
 p{
     font-family: pinot-grigio-modern, sans-serif;
@@ -17,9 +20,6 @@ p{
 span{
     color: red;
 }
-div:hover{
-    animation: footer 5s linear 0s infinite;
-}
 .move{
     color: red;
     font-family: pinot-grigio-modern, sans-serif;
@@ -27,6 +27,10 @@ div:hover{
     font-style: normal;
     font-size: 25px;
     text-align: center;
+    animation: header 5s linear infinite paused;
+}
+.move:hover{
+    animation: header 5s linear infinite running;
 }
 .footer{
     position: fixed;
@@ -41,6 +45,14 @@ div:hover{
 @keyframes footer{
     0%{
         transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes header{
+    0%{
+        transform: translateX(0%);
     }
     100%{
         transform: translateX(-100%);
