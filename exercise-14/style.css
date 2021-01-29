@@ -3,13 +3,20 @@
     margin: 0;
     padding: 0;
 }
+.bkimg .img{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background: url(img/burger.png) repeat center fixed;
+    z-index:-1;
+    opacity: .15;
+}
 #brgr{
     display: none;
-}
-img{
-    width: 25vw;
-    height: auto;
-    opacity: .15;
 }
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -17,6 +24,7 @@ body{
 .toggle{
     display: flex;
     flex-wrap: wrap;
+    z-index: 1;
 }
 @media screen and (max-width: 768px) {
     .menu {
