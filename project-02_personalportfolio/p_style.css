@@ -51,9 +51,43 @@ nav ul li a{
     text-align: center;
     width: 100vw;
     height: 20px;
+    padding: 40px;
 }
 .filter p{
     list-style: none;
     display: inline-block;
     margin-left:20px;
+}
+.icon{
+    display: flex;
+    flex-wrap: flex;
+    width: 100vw;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+#ic01{
+    width: 33.33%;
+    height: 100%;
+}
+img{
+    object-fit: contain;
+}
+.text{
+    position: absolute;
+    color: rgb(105, 165, 255);
+    font-weight: 700;
+    font-size: 30px;
+}
+span{
+    font-weight: 700;
+    font-size: 20px;
+}
+#ic02{
+    width: 33.33%;
+    height: 100%;
+}
+#ic03{
+    width: 33.33%;
+    height: 100%
 }
