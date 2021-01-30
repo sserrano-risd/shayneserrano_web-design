@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: mr-eaves-modern, sans-serif;
+    font-style: normal;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+    padding: 1%;
+}
+.logo{
+    display: flex;
+    width: 500px;
+    height:100%;
+}
+.logo h3{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+#label{
+    padding-left: 2%;
+}
+#label h6{
+    color: rgb(105, 165, 255);
+    font-weight: 200;
+    font-size: 14px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    width: 400px;
+    font-weight: 700;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left:30px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.slideshow{
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: 75%;
+    background-size: contain;
+    animation: slide 30s ease-in-out infinite;
+    background-repeat: no-repeat;
+}
+
+@keyframes slide{
+    0%,100%{
+        background-image: url(img/brooklynactivism_02.jpg);
+    }
+    33%{
+        background-image: url(img/brooklynactivism_01.jpg);
+    }
+    66%{
+        background-image: url(img/urbanconnection_01.jpg);
+    }
+    }

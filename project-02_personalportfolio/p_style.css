@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: mr-eaves-modern, sans-serif;
+    font-style: normal;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 50px;
+    padding: 1%;
+}
+.logo{
+    display: flex;
+    width: 500px;
+    height:100%;
+}
+.logo h3{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+#label{
+    padding-left: 2%;
+}
+#label h6{
+    color: rgb(105, 165, 255);
+    font-weight: 200;
+    font-size: 14px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    width: 400px;
+    font-weight: 700;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left:30px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.filter{
+    flex: 1;
+    text-align: center;
+    width: 100vw;
+    height: 20px;
+}
+.filter p{
+    list-style: none;
+    display: inline-block;
+    margin-left:20px;
+}
