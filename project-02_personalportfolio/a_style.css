@@ -46,24 +46,24 @@ nav ul li a{
     text-decoration: none;
     color: black;
 }
-.slideshow{
-    z-index: -1;
-    position: fixed;
-    width: 100vw;
-    height: 75%;
-    background-size: contain;
-    animation: slide 30s ease-in-out infinite;
-    background-repeat: no-repeat;
-}
 
-@keyframes slide{
-    0%,100%{
-        background-image: url(img/brooklynactivism_02.jpg);
-    }
-    33%{
-        background-image: url(img/brooklynactivism_01.jpg);
-    }
-    66%{
-        background-image: url(img/urbanconnection_01.jpg);
-    }
-    }
+h2{
+    text-align: center;
+}
+.imgtxt{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 100px;
+}
+img{
+    width: 25vw;
+    object-fit: contain;
+}
+.imgtxt p{
+    width: 25vw;
+    padding-left: 50px;
+}

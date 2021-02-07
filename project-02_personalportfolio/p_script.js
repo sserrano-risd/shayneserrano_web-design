@@ -35,4 +35,50 @@ $("document").ready(function(){
         $(this).css('opacity','1');
         $("#browns").hide();
    });
+
+   $("#ic05").mouseover(function () {
+        $(this).css('opacity','.15');
+        $("#urban").show();
+   });
+   $("#ic05").mouseout(function () {
+        $(this).css('opacity','1');
+        $("#urban").hide();
+   });
+   
+   $("#ic06").mouseover(function () {
+        $(this).css('opacity','.15');
+        $("#tech").show();
+   });
+   $("#ic06").mouseout(function () {
+        $(this).css('opacity','1');
+        $("#tech").hide();
+   });
+
+   $("#ic07").mouseover(function () {
+        $(this).css('opacity','.15');
+        $("#plexi").show();
+   });
+   $("#ic07").mouseout(function () {
+        $(this).css('opacity','1');
+        $("#plexi").hide();
+   });
+   $("#ic08").mouseover(function () {
+        $(this).css('opacity','.15');
+        $("#rising").show();
+});
+   $("#ic08").mouseout(function () {
+        $(this).css('opacity','1');
+        $("#rising").hide();
+});
+
+//    $(".trib").mouseover(function () {
+//         $(this).css('opacity','.5');
+// });
+//    $(".trib").mouseout(function () {
+//         $(this).css('opacity','1');
+// });
+
+     $(".trib").click(function(){
+          $(".scroll").css("animation-play-state","running");
+     });
 })

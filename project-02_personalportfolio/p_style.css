@@ -2,8 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    height: auto;
     font-family: mr-eaves-modern, sans-serif;
     font-style: normal;
+}
+html::-webkit-scrollbar {
+    display: none;
 }
 .header{
     display: flex;
@@ -57,17 +61,25 @@ nav ul li a{
     list-style: none;
     display: inline-block;
     margin-left:20px;
+    cursor: pointer;
+}
+.scroll{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 100%;
+    animation: iconslide01 4s ease forwards paused;
 }
 .icon{
     display: flex;
-    flex-wrap: flex;
-    width: 100vw;
+    flex-wrap: nowrap;
+    width: 266.66vw;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 50px;
 }
 .projicon{
-    width: 33.33%;
+    width: 33.33vw;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -77,14 +89,16 @@ nav ul li a{
 
 img{
     object-fit: contain;
+    cursor: pointer;
 }
 
 .text{
     position: absolute;
     text-align: center;
-    width: 33%;
+    width: 33.33%;
     color: rgb(105, 165, 255);
     font-size: 30px;
+    pointer-events: none;
 }
 
 #plani{
@@ -101,6 +115,54 @@ img{
 #browns{
     display:none;
 }
+#urban{
+    display:none;
+}
+#tech{
+    display:none;
+}
+#plexi{
+    display:none;
+}
+#rising{
+    display:none;
+}
 span{
     font-size: 20px;
+}
+
+@keyframes iconslide01{
+    0%{
+        transform:translateX(0);
+}
+    50%{
+        transform:translateX(-100vw)
+    }
+    100%{
+        transform:translateX(-200vw)
+    }
+}
+.flick{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.tria{
+    width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-right: 25px solid rgb(105, 165, 255);
+	border-bottom: 12.5px solid transparent;
+    cursor: pointer;
+}
+.trib{
+    width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-left: 25px solid rgb(105, 165, 255);
+	border-bottom: 12.5px solid transparent;
+    cursor: pointer;
 }
