@@ -11,35 +11,106 @@
     font-weight: 500;
     font-style: normal;
 }
+.header h3{
+    font-family: pinot-grigio-modern, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
 .header h4{
     font-family: pinot-grigio-modern, sans-serif;
     font-weight: 300;
     font-style: normal;
 }
+.container{
+    display: inline-block;
+    width: 100vw;
+    height: 100%;
+}
 .gridcontain{
     display: grid;
-    width: 100vw;
-    height: 100vh;
-    height: 1500px;
-    grid-template-columns: repeat(4, 25vw);
-    grid-template-rows: 25vw;
+    grid-template-columns: repeat (5, 20%);
+    grid-template-rows: repeat (2, 20%);
     column-gap: 10px;
     row-gap: 10px;
     padding: 5%;
 }
+/* .cell{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: aqua;
+} */
 .item01{
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
-    background-color: rgb(150, 150, 150)
+    background-color: rgb(150, 150, 150);
 }
-.link{
-    display: block;
-    justify-self: center;
-    align-self: center;
+.item02{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: rgb(150, 150, 150);
 }
-a{
+.item03{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: rgb(150, 150, 150);
+}
+.item04{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: rgb(150, 150, 150);
+}
+.item05{
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: rgb(150, 150, 150);
+}
+.item06{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: rgb(150, 150, 150);
+}
+.item07{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: rgb(150, 150, 150);
+}
+.item08{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: rgb(150, 150, 150);
+}
+.item09{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: rgb(150, 150, 150);
+}
+.item10{
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: rgb(150, 150, 150);
+}
+a {
     text-decoration: none;
     color: white;
     font-family: mr-eaves-modern, sans-serif;

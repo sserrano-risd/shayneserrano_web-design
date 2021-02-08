@@ -78,7 +78,62 @@ $("document").ready(function(){
 //         $(this).css('opacity','1');
 // });
 
-     $(".trib").click(function(){
-          $(".scroll").css("animation-play-state","running");
-     });
+//    $(".trib").click(function(){
+//         $(".scroll").css("animation-play-state","running");
+// });
+
+let translate = 0;
+let viewNum = 3;
+
+$(".arrow").click(function(){
+     if($(this).hasClass("trib")) {
+          if(translate/100 < viewNum-1) {
+               translate += 100;
+          } else {
+               translate = 0;
+          }    
+     } else if($(this).hasClass("tria")) {
+          if(translate/100 > 0) {
+               translate -= 100;
+          } else {
+               translate = 200;
+          }
+     }
+     $(".scroll").css({
+          "transform" : `translateX(-${translate}vw)`
+     }); 
+     // $(".scroll").transition({
+     //      x: '-${translate}vw'
+     // });
+});
+
+var icon = document.querySelector(".icon");
+
+     for(var i = 0; i < icon.children.length; i++){
+          icon.appendChild(icon.children[Math.random() * i | 0]);
+};
+
+// $(".filter").click(function(){
+//      if($(this).hasClass("showall")) {
+//           $(".grad .undergrad").css({
+//                "display" : `block`
+//           });
+//      } else if($(this).hasClass("showgrad")) {
+//           $(".undergrad").css({
+//                "display" : `none`
+//           });
+//           $(".grad").css({
+//                "display" : `block`
+//           });
+//      } else if($(this).hasClass("showundergrad")) {
+//           $(".undergrad").css({
+//                "display" : `block`
+//           });
+//           $(".grad").css({
+//                "display" : `none`
+//           });
+//      };
+// });
+
+
 })
