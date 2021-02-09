@@ -88,7 +88,7 @@ nav ul li a{
     justify-content: center;
 }
 
-img{
+.projicon img{
     object-fit: contain;
     cursor: pointer;
 }
@@ -172,19 +172,58 @@ span{
 }
 .archactive{
     position: absolute;
+    top:0;
+    left:0;
     display: flex;
     flex-wrap: wrap;
-    width: 75vw;
+    width: 100vw;
     height: 100%;
+    justify-content: center;
+    background-color: white;
+    overflow: hidden;
+    display: none;
+}
+.close{
+    position: absolute;
+    top:15px;
+    right:25px;
+    font-size: 25px;
+    cursor: pointer;
 }
 .projimages{
-    width:37.5vw;
+    width:60vw;
     height:100%;
+    padding: 50px;
+    overflow: scroll;
+}    
+.projimages::-webkit-scrollbar {
+    display: none;
 }
-.projimage img{
+.imgs > img{
+    width:100%;
+    height:auto;
     object-fit: contain;
 }
 .projtext{
-    width:37.5vw;
+    width:30vw;
     height:100%;
+    padding: 50px;
 }
+#blue{
+    color:rgb(105, 165, 255) ;
+}
+.imgs > p{
+    text-align: center;
+    padding: 15px;
+}
+@media screen and (max-width: 768px) {
+    .arrow{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .logo{
+        transform: scale(.75);
+    }
+    }

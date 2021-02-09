@@ -14,7 +14,7 @@ var circloc = {
 
 function windowResized(){
     resizeCanvas(windowWidth,windowHeight);
-}
+};
 function setup(){
     canvas = createCanvas(windowWidth,windowHeight);
     canvas.position(0,0);
@@ -22,7 +22,7 @@ function setup(){
     background(0);
     frameRate(30);
 
-}
+};
 function draw(){
     circwidth.w = random(10,150);
     circloc.x = random(0,windowWidth);
@@ -33,12 +33,12 @@ function draw(){
     noFill();
     stroke(colors.r,colors.g,colors.b);
     circle(circloc.x,circloc.y,circwidth.w);
-}
+};
 
-// $("div").mouseover(function () {
-//     $("div").css('background-color','105, 165, 255');
-// });
+$(".item").mouseover(function () {
+    $(this).css('color','rgb(105, 165, 255)');
+ });
 
-// $("div").mouseout(function () {
-//     $("div").css('color','0,0,0');
-// });
+$(".item").mouseout(function () {
+     $(this).css('color','rgb(0, 0, 0)');
+ });

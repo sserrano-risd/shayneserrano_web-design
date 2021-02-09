@@ -86,6 +86,13 @@ let translate = 0;
 let viewNum = 3;
 
 $(".arrow").click(function(){
+     if($(".active").hasClass("showgrad")) {
+          viewNum = 1;
+     } else if($(".active").hasClass("showundergrad")) {
+          viewNum = 2;
+     } else {
+          viewNum = 3;
+     }
      if($(this).hasClass("trib")) {
           if(translate/100 < viewNum-1) {
                translate += 100;
@@ -96,7 +103,7 @@ $(".arrow").click(function(){
           if(translate/100 > 0) {
                translate -= 100;
           } else {
-               translate = 200;
+               translate = (viewNum-1) * 100;
           }
      }
      $(".scroll").css({
@@ -134,6 +141,36 @@ var icon = document.querySelector(".icon");
 //           });
 //      };
 // });
+$(".show").click(function() {
+     $(".show").removeClass("active");
+     $(this).addClass("active");
 
+     if($(this).hasClass("showall")) {
+          $(".projicon").show();
 
-})
+     } else if($(this).hasClass("showgrad")) {
+          $(".projicon").hide();
+          $(".grad").show();
+
+     } else if($(this).hasClass("showundergrad")) {
+          $(".projicon").hide();
+          $(".undergrad").show();
+     }
+});
+
+// $("ic01").click(function() {
+//      console.log("Click Work");
+//      $(".archactive").slideUp();
+// });
+
+$(document).on('click', '#ic04', function(){ 
+     console.log("Click Work");
+     $(".archactive").show();
+});
+
+$(document).on('click', '.close', function(){ 
+     console.log("Click Work");
+     $(".archactive").hide();
+});
+
+});
