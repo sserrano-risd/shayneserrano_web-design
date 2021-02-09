@@ -34,3 +34,11 @@ function draw(){
     stroke(colors.r,colors.g,colors.b);
     circle(circloc.x,circloc.y,circwidth.w);
 }
+
+// $("div").mouseover(function () {
+//     $("div").css('background-color','105, 165, 255');
+// });
+
+// $("div").mouseout(function () {
+//     $("div").css('color','0,0,0');
+// });

@@ -27,6 +27,7 @@ body{
     font-weight: 300;
     font-style: normal;
 }
+
 .gridcontain{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -42,7 +43,7 @@ body{
     text-align: center;
 }
 div{
-    color: white;
+    /* color: white; */
     font-family: mr-eaves-modern, sans-serif;
     font-style: normal;
     font-weight: 200;
@@ -51,7 +52,26 @@ div{
 a{
     text-decoration: none;
     color: white;
-    font-family: mr-eaves-modern, sans-serif;
+    font-family: jaf-domus,sans-serif;
+    font-weight: 600;
     font-style: normal;
-    font-weight: 500;
+    font-size: 20px;
+    /* animation: rainbow 2s ease infinite; */
 }
+/* @keyframes rainbow{
+    0%{
+        color: white;
+    }
+    25%{
+        color:rgb(255, 38, 0)
+    }
+    50%{
+        color: rgb(225, 0, 255);
+    }
+    75%{
+        color: rgb(255, 255, 0);
+    }
+    100%{
+        color: rgb(170, 255, 0);
+    }
+} */
