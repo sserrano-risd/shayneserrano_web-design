@@ -14,6 +14,7 @@ var circloc = {
 
 function windowResized(){
     resizeCanvas(windowWidth,windowHeight);
+    background(0);
 };
 function setup(){
     canvas = createCanvas(windowWidth,windowHeight);
