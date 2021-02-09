@@ -165,12 +165,45 @@ $(".show").click(function() {
 
 $(document).on('click', '#ic04', function(){ 
      console.log("Click Work");
-     $(".archactive").show();
+     $(".nodisplay").show();
 });
 
 $(document).on('click', '.close', function(){ 
      console.log("Click Work");
-     $(".archactive").hide();
+     $(".nodisplay").hide();
 });
+
+$.getJSON("projects.json", function(projects) {
+     let html = '';
+     $.each(projects, function(i, works) {
+         html += `
+         <div class="close">
+             <p>x</p>
+         </div>
+         <div class="projimages">
+             <div class="imgs">
+                 <img src=${works.img}>
+                 <p>${works.imglabel}</p>
+             </div>
+         </div>
+         <div class="projtext">
+             <h2 id="blue">${works.contentname}</h2>
+             <br>
+             <h4>Project</h4>
+             <p>${works.project}</p>
+             <br>
+             <h4>Course</h4>
+             <p>${works.course}</p>
+             <br>
+             <h4>Critic</h4>
+             <p>${works.critic}</p>
+             <br>
+             <h4>Description</h4>
+             <p>${works.description}</p>
+         </div>`
+     });
+ 
+     $(".insertjson").append(html);
+ });
 
 });
