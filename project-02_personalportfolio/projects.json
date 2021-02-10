@@ -1,5 +1,5 @@
 [
-    {   
+    {
         "id": "ic04",
         "img1": "proj_brownsville/brownsvillerender.jpg",
         "imglabel1": "Exterior Rendering",
@@ -10,6 +10,75 @@
         "description": "The Brownsville Community Center for Health and Wellness began as a collaborative community service project and evolved into an ambitious campaign to bring about social change. My design studio worked in conjunction with City Tech’s nursing department to create the perfect program for a proposed community center in Brownsville, Brooklyn. Through a joint effort of diligent research and volunteer work, we were able to come up with a list of spaces we felt would address Brownsville’s high rates in crime, poverty, asthma, and obesity. I then implemented these spaces into my individual design, which is an innovative interpretation of the local public housing. My design reads as the crossing of two L-shaped forms; the intersection pinpointed by a 3-story glass atrium. This circular, multi-story space houses a climate controlled indoor park to create a public garden for residents suffering from asthma. The indoor garden overlooks the below grade fitness center, comprised of a gymnasium, natatorium, and an exercise room. The bi-level public library, second floor classrooms, and auditorium confront crime and poverty by allowing the room for educational programs, research, and productive, artistic endeavors for the community. The third and fourth floors provide a medical center, higher education nursing classrooms, and geriatric planting beds. As a result of our efforts, 20 architecture students were selected to present their designs to the public at Brooklyn Borough Hall in hopes of sparking an era of change for Brownsville."
     },
     {
-
+        "id": "ic05",
+        "img1": "proj_eastriver/urbanconnection.jpg",
+        "imglabel1": "Exterior Rendering",
+        "contentname": "Urban Connection",
+        "project": "The East River Mixed-Use Complex",
+        "course": "ARCH 4710 | Urban Design",
+        "critic": "Vesselin Milev",
+        "description": "The East River Mixed-Use Complex is located just south of the United Nations building, on a site which the F.D.R. Drive completely segregates from the East River. Tasked with designing a series of towers and an urban greenscape; I was forced to think critically about making spatial connections and solving problems brought on by unfavorable site conditions. I decided that my landscape would be a massive tri-level public garden that extended over and under the F.D.R. Drive towards the waterfront. Vertical cylinders, housing stairs and elevators, would allow access from each level down to the waterfront . Creating this relationship enriched the flow of urban movement, as the New York City Greenway user was provided with a means of traveling over the FDR Drive and around the land owned by the U.N. Inspired by Russian Constructivist art for social change, my massing’s were rigid, rectangular prisms, sitting on cubed pedestals. Horizontal extrusions connect each tower and create elevated outdoor spaces. In plan view, the scattered pure geometries across the fixed terrain represent voids, canopies, lawns, and elevated parks."
+    },
+    {
+        "id": "ic01",
+        "img1": "proj_angellst/angellimg01.jpg",
+        "imglabel1": "Exterior Rendering",
+        "contentname": "Planimetric Overlap",
+        "project": "Questioning the Void",
+        "course": "Core 1 Studio | Subjects, Tools, Processes",
+        "critic": "Evan Farley",
+        "description": "This project relies on the chance planimetric overlap of rooms at different levels to create voids at each floor plate, ultimately allowing rooms to have a vertical connectedness that is more prominent than the horizontal space adjacencies.My precedent for this project is Dia Beacon by Michael Heizer, which led me to question extensive voids in space and their habitability. Though in the case of Dia Beacon they aren’t, can one reside in such space? As it relates to the site, I extracted the language of rectangular prisms with irregular building perimeters in the form of volumetric pop outs, whether they are bay windows, balconies, gable dormers, etc. For my project, each level of creation rotates 15 degrees counterclockwise from the creation level below in order to maximize westward views of downtown Providence at the top level. Charged by its embedment within RISD’s campus and Jylian Gustlin’s figurative works, this civic structure promotes the creation of… whether it be the creation of art, of relationships, or of self. Through the arousal of emotion, triggered by varying architectural spaces, and the coalescence of color, the rooms encourage the user to feel and create. Colored shapes are considered voids themselves in each floor plan and on levels 1, 3, and 5 the users occupy this void space. Levels 2 and 5 connect spaces of pure geometric rooms through a vertical void that poses as the structure."
+    },
+    {
+        "id": "ic02",
+        "img1": "proj_ascend/modelimage.jpg",
+        "imglabel1": "Physcial Model",
+        "contentname": "Triangular Reorientation",
+        "project": "Ascend & Suspend",
+        "course": "Core 1 Studio | Subjects, Tools, Processes",
+        "critic": "Evan Farley",
+        "description": "This structure allows for the ritual of climbing and suspending in space to transpire. The repetitious fins, that wrap around a triangulated structure, create three distinct spaces for the occupant to explore. As the user moves through the architecture, they are able to exploit the capabilities of the human body, much like an acrobat or contortionist. The edifice is not fixed in any single position, encouraging the occupant to re-orient it, as they so choose. Three Guiding Principles: occupant must be able to support 2-3 limbs on a sturdy surface or volume, occupant must appear to be entangled within, or become a part of the structure, there must be 3, or more, spatial zones which the occupant can inhabit; this might mean that there are various levels, or partially enclosed rooms."
+    },
+    {
+        "id": "ic03",
+        "img1": "proj_geoid/geo01.jpg",
+        "imglabel1": "Drawing",
+        "contentname": "Mapped Geoid",
+        "project": "-",
+        "course": "ARCH 201-G | Drawings",
+        "critic": "David Ross",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": "ic06",
+        "img1": "proj_highline/chealsea01.jpg",
+        "imglabel1": "Exterior Rendering",
+        "contentname": "Building Technology",
+        "project": "The Chelsea Office Tower",
+        "course": "ARCH 4810 | Advanced Studio",
+        "critic": "Phillip Anzalone",
+        "description": "The Chelsea Office Tower sits adjacent to New York City’s Highline along 10th Avenue, between 18th and 19th Streets. My mass was derived through an interaction of multiple pure geometries, each housing their own program. The conceptual void spaces were inspired by my site visit and are meant to create visual boundaries and striking view ports. Programmatically, the lower levels house commercial spaces. At highline level there is an accessible art venue, and the remaining floors house office space. The cube extrusion at the top of the tower is a restaurant/bar with views of lower Manhattan. In this design studio, I was able to explore steel frame construction and multiple facade systems; including unitized glass and precast concrete curtain wall systems and point support glass systems."
+    },
+    {
+        "id": "ic07",
+        "img1": "proj_plexi/pleximodel.jpg",
+        "imglabel1": "Physcial Model",
+        "contentname": "Material Tolerance",
+        "project": "The Central Nervous System Plexi-Sphere",
+        "course": "ARCH 3590 | Fabrication I",
+        "critic": "Joseph Vidich",
+        "description": "Challenged with creating a glueless plexiglass sphere that relied solely on a system of friction connections, I was able to explore the intricacy of material tolerances. My concept was derived from the central nervous system, which is comprised of the brain and the spinal cord. The four lobes of the brain (frontal, parietal, temporal, and occipital) are represented by the four quadrants of my sphere. Each quadrant does something different when compared to its counterpart, as each lobe has its own unique function that contributes to the whole. Since the temporal lobe only acts on the right and left side of the brain, it is the only quadrant to be directly split in half. The red connection pieces act as the spine of the central nervous system, and of the sphere."
+    },
+    {
+        "id": "ic08",
+        "img1": "proj_surface/render.jpg",
+        "imglabel1": "Render",
+        "img2": "proj_surface/model.jpg",
+        "imglabel2": "Physical Model",
+        "contentname": "Complex Surfaces",
+        "project": "Rising Sea Levels",
+        "course": "ARCH 3590 | Fabrication I",
+        "critic": "Joseph Vidich",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
 ]
