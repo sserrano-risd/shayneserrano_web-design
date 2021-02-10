@@ -1,3 +1,60 @@
+$.getJSON("projects.json", function(projects) {
+     let html = '';
+     $.each(projects, function(i, works) {
+         html += `
+         <div class="project" id="${works.id}-detail">
+         <section class="archactive">
+         <div class="close">
+             <p>x</p>
+         </div>
+         <div class="projimages">`;
+
+          let highestImageCount = 3;
+
+          let allJsonKeys = Object.keys(works);
+
+          let allJsonValues = Object.values(works);
+
+         for(j=1; j<highestImageCount*2+1; j++) {
+              if(allJsonKeys[j].match(`img${j}`) && !(allJsonKeys[j].match(`imglabel${j}`))) {
+
+               let image = allJsonValues[j];
+               let label = allJsonValues[j+1];
+
+               if(image == undefined) {
+                    break;
+               } else {
+                html += 
+                `<div class="imgs">
+                     <img src=${image}>
+                     <p>${label}</p>
+                </div>`;
+               }
+              }  
+         } 
+         html += `</div>
+         <div class="projtext">
+             <h2 id="blue">${works.contentname}</h2>
+             <br>
+             <h4>Project</h4>
+             <p>${works.project}</p>
+             <br>
+             <h4>Course</h4>
+             <p>${works.course}</p>
+             <br>
+             <h4>Critic</h4>
+             <p>${works.critic}</p>
+             <br>
+             <h4>Description</h4>
+             <p>${works.description}</p>
+         </div>
+         </section>
+         </div>`
+     });
+ 
+     $(".project-details").append(html);
+ });
+
 $("document").ready(function(){
 
     $("#ic01").mouseover(function () {
@@ -163,47 +220,62 @@ $(".show").click(function() {
 //      $(".archactive").slideUp();
 // });
 
-$(document).on('click', '#ic04', function(){ 
+// $(document).on('click', '#ic04', function(){ 
+//      console.log("Click Work");
+//      $(".nodisplay").show();
+// });
+
+// $(document).on('click', '.close', function(){ 
+//      console.log("Click Work");
+//      $(".nodisplay").hide();
+});
+
+$(document).on('click', '.projicon', function(){ 
      console.log("Click Work");
-     $(".nodisplay").show();
+
+     let thisProj = $(this).children("img").attr("id");
+
+     $(".project").hide();
+     $(`#${thisProj}-detail`).show();
+     $(".project-details").show();
 });
 
 $(document).on('click', '.close', function(){ 
      console.log("Click Work");
-     $(".nodisplay").hide();
-});
 
-$.getJSON("projects.json", function(projects) {
-     let html = '';
-     $.each(projects, function(i, works) {
-         html += `
-         <div class="close">
-             <p>x</p>
-         </div>
-         <div class="projimages">
-             <div class="imgs">
-                 <img src=${works.img}>
-                 <p>${works.imglabel}</p>
-             </div>
-         </div>
-         <div class="projtext">
-             <h2 id="blue">${works.contentname}</h2>
-             <br>
-             <h4>Project</h4>
-             <p>${works.project}</p>
-             <br>
-             <h4>Course</h4>
-             <p>${works.course}</p>
-             <br>
-             <h4>Critic</h4>
-             <p>${works.critic}</p>
-             <br>
-             <h4>Description</h4>
-             <p>${works.description}</p>
-         </div>`
-     });
+     $(".project-details").hide();
+
+// $.getJSON("projects.json", function(projects) {
+//      let html = '';
+//      $.each(projects, function(i, works) {
+//          html += `
+//          <div class="close">
+//              <p>x</p>
+//          </div>
+//          <div class="projimages">
+//              <div class="imgs">
+//                  <img src=${works.img}>
+//                  <p>${works.imglabel}</p>
+//              </div>
+//          </div>
+//          <div class="projtext">
+//              <h2 id="blue">${works.contentname}</h2>
+//              <br>
+//              <h4>Project</h4>
+//              <p>${works.project}</p>
+//              <br>
+//              <h4>Course</h4>
+//              <p>${works.course}</p>
+//              <br>
+//              <h4>Critic</h4>
+//              <p>${works.critic}</p>
+//              <br>
+//              <h4>Description</h4>
+//              <p>${works.description}</p>
+//          </div>`
+//      });
  
-     $(".insertjson").append(html);
- });
+//      $(".insertjson").append(html);
+// });
 
 });

@@ -171,7 +171,7 @@ span{
 .active{
     color: rgb(105, 165, 255);
 }
-.nodisplay{
+.project-details{
     display: none;
 }
 .archactive{
@@ -186,19 +186,6 @@ span{
     background-color: white;
     overflow: hidden;
 }
-/* .insertjson{
-    position: absolute;
-    top:0;
-    left:0;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 100%;
-    justify-content: center;
-    background-color: white;
-    overflow: hidden;
-    display: none;
-} */
 .close{
     position: absolute;
     top:15px;

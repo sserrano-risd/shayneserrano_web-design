@@ -1,7 +1,8 @@
 [
-    {
-        "img": "proj_brownsville/brownsvillerender.jpg",
-        "imglabel": "Exterior Rendering",
+    {   
+        "id": "ic04",
+        "img1": "proj_brownsville/brownsvillerender.jpg",
+        "imglabel1": "Exterior Rendering",
         "contentname": "Architectural Activism",
         "project": "The Brownsville Community Center for Health and Wellness",
         "course": "ARCH 4710 | Urban Design",
