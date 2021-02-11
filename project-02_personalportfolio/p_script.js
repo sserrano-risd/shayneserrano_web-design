@@ -17,7 +17,7 @@ $.getJSON("projects.json", function(projects) {
           let allJsonValues = Object.values(works);
 
          for(j=1; j<highestImageCount*2+1; j++) {
-              if(allJsonKeys[j].match(`img${j}`) && !(allJsonKeys[j].match(`imglabel${j}`))) {
+              if(allJsonKeys[j].match(/^img/) && !(allJsonKeys[j].match(/^imgl/))) {
 
                
                let image = allJsonValues[j];
